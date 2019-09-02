@@ -1,6 +1,5 @@
-/* main page stylings  */
+/* About me page stylings  */
 .wrapper {
-	height: 590px;
 	background-color: #fafafa;
 	background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
 	margin: 0px;
@@ -29,7 +28,7 @@ section{
 }
 
 p {
-	width: 784px;
+	width: 100%;
 	display: inline-block;
 	padding: 7px;
 	margin: 5px;
@@ -38,7 +37,7 @@ p {
 }
 
 .bigger-width{
-    width: 890px;
+    width: 100%;
 }
 
 hr {
@@ -157,5 +156,83 @@ button {
 #email-input {
 	width: 615px;
 }
+/* About Me 640px media breaks */
+@media only screen and (max-width: 640px){
+nav{
+	float: none;
+    display: block;
+    margin-top: 60px;
+    text-align: center;
+}
+header {
+	width: 100%;
+    position: fixed;
+    top: 6px;
+    left: 0px;
+    z-index: 1500;
+}
 
+.profilePic{
+	height: 100%;
+    width: 100%;
+    margin-left: 4px;
+}
+
+p {
+	width: 100%;
+    display: block;
+    margin: 5px;
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bigger-width{
+	width: 100%
+}
+
+footer{
+	background-color: #666666;
+    color: white;
+    padding-top: 40px;
+	width: 100%;
+	text-align: center;
+}
+/* Portfolio page 640px media breaks*/
+
+.innerHeaderWrapper{
+	margin: 0px auto;
+    width: 100%;
+}
+
+.marriott-image,
+.nuance-image,
+.sava-senior-image,
+.future-developer,
+.engineer{
+	height: fit-content;
+}
+
+.grid-container{
+	grid-template-columns: none;
+}
+
+/* contact page 640px media breaks*/
+button{
+	background-color: #48aba8;
+    height: 41px;
+	width: 112px;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+input{
+	border: 1px solid #cccccc;
+}
+
+textarea{
+	border: 1px solid #cccccc;
+	width: 100%;
+}
+
+/* About Me 768px media breaks */
 
